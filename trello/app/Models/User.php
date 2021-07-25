@@ -41,7 +41,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function  workspaces()
+    public function workspaces()
     {
         return $this->hasMany(\App\Models\Workspace::class);
     }

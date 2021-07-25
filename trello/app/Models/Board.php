@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class workspace extends Model
+class Board extends Model
 {
     use HasFactory;
 
-    public function  user()
+    public function workspace()
     {
-        return $this->belongsTo(\App\Models\User::class);
+      return $this->belongsTo(\App\Models\Workspace::class);
     }
 }
