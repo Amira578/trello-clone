@@ -13,8 +13,4 @@ class Board extends Model
     {
       return $this->belongsTo(\App\Models\Workspace::class);
     }
-    public function cardsLists()
-    {
-        return $this->hasMany(\App\Models\CardsList::class);
-    }
 }
